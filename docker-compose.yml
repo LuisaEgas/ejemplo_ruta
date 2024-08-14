@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  ruta:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      DB_URL: jdbc:mysql://retords2.cqzv41tc4pqx.us-west-1.rds.amazonaws.com:3307/plazoleta
+      DB_USER: admin
+      DB_PASS: admin1234
+    restart: always
